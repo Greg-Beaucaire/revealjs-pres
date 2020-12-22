@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/blood.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>REVEAL.JS</h1>
+				</section>
+
+				<section data-auto-animate>
+					<p><b>REVEAL.JS</b> est un framework de présentation HTML</p>
+				</section>
+				<section data-auto-animate>
+					<p><b>REVEAL.JS</b> est un framework de présentation HTML</p>
+					<p>Il est entièrement basé sur des technologies open-source</p>
+				</section>
+
+				<section data-auto-animate>
+					<p>Ce framework a été créé par <b>Hakim El Hattab</b>, un développeur suédois.</p>
+				</section>
+				<section data-auto-animate>
+					<p>Ce framework a été créé par <b>Hakim El Hattab</b>, un développeur suédois.</p>
+					<p><a href="https://hakim.se/" target="blank">Son site personnel</a></p>
+				</section>
+
+				<section data-auto-animate>
+					<p>Entièrement en HTML, vous pouvez utiliser toutes les technologies qui y sont associées</p>
+				</section>
+				<section data-auto-animate>
+					<p>Entièrement en HTML, vous pouvez utiliser toutes les technologies qui y sont associées</p>
+					<p>Par exemple, je peux appliquer une couleur particulière à un élément</p>
+				</section>
+				<section data-auto-animate>
+					<p>Entièrement en <b style="color: rgb(185, 1, 1);">HTML</b>, vous pouvez utiliser toutes les technologies qui y sont associées</p>
+					<h2>T A D A</h2>
+				</section>
+
+				<section>
+					<p>Passons en revue les différentes possibilités que nous offre ce framework</p>
+				</section>
+
+				<section data-auto-animate>
+					<p>Ce qui nous intéresse</p>
+				</section>
+				<section data-auto-animate>
+					<p>Ce qui nous intéresse</p>
+					<p>(PAS WORDPRESS DU COUP, PLEASE PLUS JAMAIS!!)</p>
+				</section>
+				<section data-auto-animate>
+					<p>Donc... Ce qui nous intéresse</p>
+				</section>
+				<section data-auto-animate>
+					<p>Donc... Ce qui nous intéresse</p>
+					<h1>Le Code</h1>
+				</section>
+
+				<section data-auto-animate="">
+					<p>Si par exemple vous souhaitez écrire un bloc de code.</p>
+				</section>
+				<section data-auto-animate="">
+					<p>Si par exemple vous souhaitez écrire un bloc de code.</p>
+					<p>Une simple balise <b>code</b> vous permettra d'afficher celui-ci de manière formatée</p>
+				</section>
+				<section data-auto-animate="">
+					<p>Si par exemple vous souhaitez écrire un bloc de code.</p>
+					<p>Une simple balise <b>code</b> vous permettra d'afficher celui-ci de manière formatée</p>
+					<pre>
+						<code data-trim data-noescape>
+							let biereQueStephEtEvaMeDoivent = ['une', 'deux', 'trois'];
+							for(let i = 0; i < biereQueStephEtEvaMeDoivent.length; i++){
+								console.log("J'adore la bière !");
+							}
+						</code>
+					</pre>
+				</section>
+
+				<section data-auto-animate>
+					<p>En reprenant le code précédemment utilisé, on peut par exemple afficher les numéros de ligne</p>
+				</section>
+				<section data-auto-animate>
+					<p>En reprenant le code précédemment utilisé, on peut par exemple afficher les numéros de ligne</p>
+					<pre>
+						<code data-trim data-noescape data-line-numbers>
+							let biereQueStephEtEvaMeDoivent = ['une', 'deux', 'trois'];
+							for(let i = 0; i < biereQueStephEtEvaMeDoivent.length; i++){
+								console.log("J'adore la bière !");
+							}
+						</code>
+					</pre>
+				</section>
+
+				<section data-auto-animate="">
+					<p>Ou bien, mettre en valeur une ligne précise</p>
+				</section>
+				<section data-auto-animate="">
+					<p>Ou bien, mettre en valeur une ligne précise</p>
+					<pre>
+						<code data-trim data-noescape data-line-numbers>
+							let biereQueStephEtEvaMeDoivent = ['une', 'deux', 'trois'];
+							for(let i = 0; i < biereQueStephEtEvaMeDoivent.length; i++){
+								console.log("J'adore la bière !");
+							}
+						</code>
+					</pre>
+				</section>
+				<section data-auto-animate="">
+					<p>Ou bien, mettre en valeur une ligne précise</p>
+					<p>Ici, la ligne 3</p>
+					<pre>
+						<code data-trim data-noescape data-line-numbers="3">
+							let biereQueStephEtEvaMeDoivent = ['une', 'deux', 'trois'];
+							for(let i = 0; i < biereQueStephEtEvaMeDoivent.length; i++){
+								console.log("J'adore la bière !");
+							}
+						</code>
+					</pre>
+				</section>
+				<section data-auto-animate="">
+					<p>Ou bien, mettre en valeur une ligne précise</p>
+					<p>Ou encore, de la ligne 2 à 4</p>
+					<pre>
+						<code data-trim data-noescape data-line-numbers="2-4">
+							let biereQueStephEtEvaMeDoivent = ['une', 'deux', 'trois'];
+							for(let i = 0; i < biereQueStephEtEvaMeDoivent.length; i++){
+								console.log("J'adore la bière !");
+							}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<p>En reprenant ce que l'on sait, on peut arriver à ce genre de résultat</p>
+				</section>
+				
+				<section>
+					<pre>
+						<code data-line-numbers="3-5|8-10|13-15|43-47">
+<table>
+<tr>
+	<td>Pommes</td>
+	<td>1.5€</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>Oranges</td>
+	<td>2€</td>
+	<td>18</td>
+</tr>
+<tr>
+	<td>Kiwi</td>
+	<td>3€</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>Courgette</td>
+	<td>420€</td>
+	<td>69</td>
+</tr>
+</table>
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<p>Le code c'est cool, mais les images de chatons c'est mieux.</p>
+				</section>
+				<section>
+					<p>Bien entendu, <b>REVEAL.JS</b> a tout ce qu'il faut pour vous <b>satisfaire</b></p>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<p>Prenons ce magnifique chaton</p>
+					</section>
+					<section data-auto-animate>
+						<p>Prenons ce magnifique chaton</p>
+						<img src="https://placekitten.com/200/300" alt="CHATONMIGNON">
+					</section>
+					<section data-auto-animate>
+						<p>Qu'arrive-t-il si on veut plus de chatonmignons ?</p>
+					</section>
+					<section data-auto-animate>
+						<p>Qu'arrive-t-il si on veut plus de chatonmignons ?</p>
+						<img src="https://placekitten.com/200/300" alt="CHATONMIGNON">
+						<img src="https://placekitten.com/400/300" alt="CHATONMIGNON">
+						<img src="https://placekitten.com/g/200/300" alt="CHATONMIGNON">
+					</section>
+					<section data-auto-animate>
+						<p>Qu'arrive-t-il si on veut plus de chatonmignons ?</p>
+						<img src="https://placekitten.com/200/300" alt="CHATONMIGNON">
+						<img src="https://placekitten.com/400/300" alt="CHATONMIGNON">
+						<img src="https://placekitten.com/g/200/300" alt="CHATONMIGNON">
+						<p>Eh oui, le framework va les agencer automatiquement</p>
+					</section>
+					<section>
+						<p>On peut aussi les empiler !</p>
+					</section>
+					<section>
+						<div class="r-stack">
+							<img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
+							<img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
+							<img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+						</div>
+					</section>
+					<section data-auto-animate>
+						<p>On peut aussi changer le background entier de la slide</p>
+					</section>
+					<section data-auto-animate data-background-image="https://placekitten.com/1920/1080">
+						<p>On peut aussi changer le background entier de la slide</p>
+					</section>
+				</section>
+
+				<section data-auto-animate>
+					<p>Parlons maintenant des</p>
+					<h2>fragments</h2>
+				</section>
+				<section data-auto-animate>
+					<p>Parlons maintenant des</p>
+					<h2>fragments</h2>
+					<p>Voici un exemple de code, et le résultat en live</p>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+<p class="fragment">Fade in</p>
+<p class="fragment fade-out">Fade out</p>
+<p class="fragment highlight-red">Highlight red</p>
+<p class="fragment fade-in-then-out">Fade in, then out</p>
+<p class="fragment fade-up">Slide up while fading in</p>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<p class="fragment">Fade in</p>
+					<p class="fragment fade-out">Fade out</p>
+					<p class="fragment highlight-red">Highlight red</p>
+					<p class="fragment fade-in-then-out">Fade in, then out</p>
+					<p class="fragment fade-up">Slide up while fading in</p>
+				</section>
+
+				<section>
+					<p>À la manière d'un framework css, on va appeller des classes déjà définies par REVEAL.JS</p>
+				</section>
+
+				<section>
+					<p>Les chatons, les effets CANAL+... le code, OK, mais et le texte normal alors ?</p>
+				</section>
+				<section data-auto-animate>
+					<p>Si on prend un exemple simple, un gros titre, et un sous titre.</p>
+				</section>
+				<section data-auto-animate>
+					<p>Si on prend un exemple simple, un gros titre, et un sous titre.</p>
+					<h1>gros titre</h1>
+					<h2>sous titre un peu longué pour l'exemple</h2>
+				</section>
+				<section data-auto-animate>
+					<p>En utilisant les classes fournies par REVEAL.JS, on obtient ce résultat</p>
+				</section>
+				<section data-auto-animate>
+					<p>En utilisant les classes fournies par REVEAL.JS, on obtient ce résultat</p>
+					<h2 class="r-fit-text">GROS TITRE</h2>
+					<h2 class="r-fit-text">sous titre un peu longué pour l'exemple</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 class="r-fit-text">GROS TITRE</h2>
+					<h2 class="r-fit-text">sous titre un peu longué pour l'exemple</h2>
+				</section>
+
+				<section>
+					<p>Mais... Les transitions dans tout ça ?</p>
+				</section>
+				<section>
+					<p>C'est parti !!!!</p>
+				</section>
+				<section data-transition="zoom">
+					Ici on utilise une transition ZOOM
+				</section>
+				<section data-transition="fade">
+					Là une transition FADE
+				</section>
+				<section data-transition="convex">
+					<section data-transition="convex">
+						Là une transition convexe
+					</section>
+					<section data-transition="convex">
+						Qui fonctionne aussi sur les slides verticales
+					</section>
+				</section>
+				<section data-transition="concave">
+					<section data-transition="concave">
+						Et maintenant c'est une transition concave
+					</section>
+					<section data-transition="concave">
+						Qui fonctionne elle aussi sur les slides verticales
+					</section>
+				</section>
+
+				<section data-auto-animate>
+					<p>Je vous laisse avec la <a href="https://revealjs.com/">DOC</a> de REVEAL.JS</p>
+				</section>
+				<section data-auto-animate>
+					<p>Je vous laisse avec la <a href="https://revealjs.com/" target="blank">DOC</a> de REVEAL.JS</p>
+					<p>Et le lien du <a href="https://github.com/Greg-Beaucaire/revealjs-pres" target="blank">GITHUB</a> de cette page</p>
+				</section>
+				<section data-auto-animate>
+					<img src="https://i.giphy.com/media/K90ckojkohXfW/giphy.webp" alt="owipopanoel">
+				</section>
+				<section data-auto-animate>
+					<img src="https://i.giphy.com/media/K90ckojkohXfW/giphy.webp" alt="owipopanoel">
+					<h3>Des questions ?</h3>
+				</section>
+
+
+				
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
